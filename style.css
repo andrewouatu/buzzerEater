@@ -26,14 +26,6 @@ body {
     justify-content: center;
 }
 
-.beer-icon {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center
-}
-
 .main-title {
     width: 50%;
     display: flex;
@@ -41,20 +33,13 @@ body {
     justify-content: center;
 }
 
-#beer_text {
+#title_text {
     font-family: 'futura';
     color: white;
     letter-spacing: 5px;
     font-size: 40px;
     position: absolute;
 }
-
-.ball-icon {
-    width: 10%;
-    display: flex;
-}
-
-
 
 .pageOne {
     height: 100%;
@@ -97,24 +82,30 @@ body {
     font-size: 35px;
 }
 
+
 .pageTwo {
-    height: calc(90vh - 60px);
-    display: inline-block;
-    display: none;
-    margin: 5% 5% 0 5%;
-    background-image: url("images/court1.jpg");
+    background-image: url('images/court1.jpg');
     background-position-x: center;
     background-repeat: no-repeat;
+    height: calc(100vh - 140px);
+    margin-top: 60px;
+    background-size: cover;
+    background-position: 50% 100%;
+    display: none;
+
 }
 
 .pageThree {
-    height: calc(100vh - 50px);
-    display: inline-block;
-    display: none;
-    background-image: url("images/court1.jpg");
+    background-image: url('images/court1.jpg');
     background-position-x: center;
     background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    margin-top: 60px;
+    background-size: cover;
+    background-position: 50% 100%;
+    display: none;
 }
+
 
 .addressSection {
     height: 15%;
@@ -144,9 +135,6 @@ body {
 
 .map {
     height: 45%;
-    /* width:40%;
-    padding: 1%; */
-    /* border: 5px solid white; */
     display:none;
 }
 
@@ -161,7 +149,8 @@ body {
 .restaurants {
     height: 48%;
     display: inline-block;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     margin-top: 5%;
     padding: 0 1%;
@@ -375,9 +364,10 @@ body {
 .gameSection {
     font-family: "Montserrat", "Arial";
     color: white;
-    height: 90%;
+    height: 100%;
     width:100%;
     overflow: auto;
+    overflow-x:hidden;
     font-size:1rem;
 }
 
@@ -486,683 +476,6 @@ body {
 }
 
 /*end NBA Scoreboard*/
-
-
-
-
-/*LOGO ANIMATION from (clemishow on https://codepen.io/clemishow/pen/ZYPPeE) and (Vladimir Gashenko onhttps://codepen.io/gxash/pen/QNzKoj)*/
-
-
-#dribbble {
-    color: #EC4E8B;
-}
-
-#hetic {
-    color: #6FB400;
-}
-
-#text {
-    position: absolute;
-    top: 335px;
-    left: 150px;
-    font-family: "futura std";
-    color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-#glass {
-    width: 70px;
-    height: 90px;
-    background: transparent;
-    border: solid 3.5px white;
-    border-top: none;
-    border-radius: 0 0 10px 10px;
-    position: relative;
-    overflow: hidden;
-    -webkit-animation: glass 10s 1;
-}
-
-#poignet {
-    width: 21px;
-    height: 46px;
-    background: transparent;
-    border: solid 3.5px white;
-    position: relative;
-    top: -73px;
-    left: 46px;
-    border-radius: 0 16px 16px 0;
-    border-left: none;
-    -webkit-animation: poignet 10s 1;
-}
-
-#beer {
-    width: 58px;
-    height: 84px;
-    background: transparent;
-    position: relative;
-    left: 3px;
-    border-radius: 0 0 5px 5px;
-    overflow: hidden;
-}
-
-#beer::before {
-    content: "";
-    width: 250px;
-    height: 250px;
-    background: #E8B504;
-    position: absolute;
-    top: 0px;
-    left: -190px;
-    -webkit-animation: beer 10s 1;
-}
-
-#mousse_1 {
-    position: relative;
-    top: -151px;
-    left: -35px;
-    z-index: 4;
-}
-
-#mousse_1::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_1::after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_2 {
-    position: relative;
-    top: -151px;
-    left: -19px;
-    z-index: 4;
-}
-
-#mousse_2::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    position: relative;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_2::after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_3 {
-    position: relative;
-    top: -152px;
-    left: -23px;
-    z-index: 4;
-}
-
-#mousse_3::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_3::after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_4 {
-    position: relative;
-    top: -155px;
-    left: 6px;
-    z-index: 4;
-}
-
-#mousse_4::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_4::after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_5 {
-    position: relative;
-    top: -146px;
-    left: 2px;
-    z-index: 4;
-    -webkit-animation: mousse 10s 1;
-}
-
-#mousse_5::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-}
-
-#mousse_volante {
-    position: relative;
-    top: -126px;
-    left: -30px;
-    z-index: 4;
-}
-
-#mousse_volante::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse_volante 5s 2;
-} 
-
- #mousse_volante::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 15px;
-    left: 40px;
-    -webkit-animation: mousse_volante 5s 2;
-}
-
-#mousse_interieur {
-    position: relative;
-    top: -84px;
-    left: -8px;
-    z-index: 4;
-    opacity: 0.5;
-}
-
-#mousse_interieur::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse_interieur 10s 1;
-}
-
-#mousse_interieur::after {
-    content: "";
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    -webkit-animation: mousse_interieur 5s 1;
-}
-
-#mousse_interieur_2 {
-    position: relative;
-    top: -115px;
-    left: -4px;
-    z-index: 4;
-    opacity: 0.5;
-}
-
-#mousse_interieur_2::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse_interieur 10s 1;
-}
-
-#mousse_interieur_2::after {
-    content: "";
-    width: 3px;
-    height: 3px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 17px;
-    -webkit-animation: mousse_interieur 5s 1;
-}
-
-#mousse_interieur_3 {
-    position: relative;
-    top: -106px;
-    left: -18px;
-    z-index: 4;
-    opacity: 0.5;
-}
-
-#mousse_interieur_3::before {
-    content: "";
-    width: 9px;
-    height: 9px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse_interieur 10s 1;
-}
-
-#mousse_interieur_3::after {
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    -webkit-animation: mousse_interieur 5s 1;
-}
-
-#mousse_interieur_4 {
-    position: relative;
-    top: -127px;
-    left: 0px;
-    z-index: 4;
-    opacity: 0.5;
-}
-
-#mousse_interieur_4::before {
-    content: "";
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation: mousse_interieur 10s 1;
-}
-
-#mousse_interieur_4::after {
-    content: "";
-    width: 5.5px;
-    height: 5.5px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 28px;
-    left: 2px;
-    -webkit-animation: mousse_interieur 5s 1;
-}
-
-
-/* ANIMATIONS */
-@-webkit-keyframes beer {
-    0% {
-        transform: translateY(82px);
-    }
-
-    17% {
-        transform: translateY(-41px);
-    }
-
-    100% {
-        transform: translateY(-82px);
-    }
-}
-
-@-webkit-keyframes glass {
-    0% {
-        transform: rotate(-20deg);
-    }
-
-    17% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@-webkit-keyframes poignet {
-    0% {
-        transform: rotate(-20deg);
-    }
-
-    17% {
-        transform: rotate(0deg) translateX(0px);
-    }
-
-    100% {
-        transform: rotate(0deg) translateX(0px);
-    }
-}
-
-@-webkit-keyframes mousse {
-    0% {
-        transform: scale(0);
-    }
-
-    10% {
-        transform: scale(0);
-    }
-
-    20% {
-        transform: scale(1);
-    }
-}
-
-@-webkit-keyframes mousse_volante {
-    0% {
-        transform: scale(0) translateY(0px);
-    }
-
-    10% {
-        transform: scale(0) translateY(0px);
-    }
-
-    20% {
-        transform: scale(1) translateY(-15px);
-    }
-
-    40% {
-        opacity: .2;
-    }
-
-    100% {
-        transform: scale(1) translateY(-20px);
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes mousse_interieur {
-    0% {
-        transform: scale(0) translateY(0px);
-        opacity: 0.9;
-    }
-
-    20% {
-        transform: scale(0) translateY(0px);
-        opacity: 0.9;
-    }
-
-    40% {
-        transform: scale(1) translateY(-60px);
-    }
-
-    50% {
-        opacity: 0.9;
-    }
-
-    100% {
-        transform: scale(1) translateY(-60px);
-        opacity: 0;
-    }
-}
-
-
-
-/*CSS FOR BASKETBALL*/
-
-
-#basket img {
-    display: block;
-    position: absolute;
-    top: 55px;
-    left: 20px;
-    min-width: 228px;
-    height: 193px;
-}
-
-
-#allWrapper {
-    position: relative;
-    height: 200px;
-    background-size: cover;
-}
-
-
-/* animation container */
-
-#ballWrapper {
-    width: 100px;
-    height: 170px;
-    display: block;
-    position: absolute;
-    cursor: pointer;
-}
-
-#ball {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    animation: jump 1s infinite;
-    overflow: hidden;
-}
-
-
-/*Ball texture*/
-
-#ball:after {
-    content: "";
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background: url("http://svgur.com/i/4D.svg");
-    position: absolute;
-    animation: rotate 2s infinite, back 1s infinite;
-    z-index: 5;
-    background-repeat: repeat;
-    background-size: cover;
-    animation-timing-function: linear;
-}
-
-
-/*Ball light*/
-
-#ball:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-image: url("http://svgur.com/i/5C.svg");
-    background-size: 110%;
-    border-radius: 100%;
-    animation: lightop 1s infinite;
-}
-
-
-/*Shadow on ball*/
-
-#ballshad {
-    background: url("http://svgur.com/i/5P.svg");
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 100%;
-    animation: shadop 1s infinite;
-    margin: auto;
-    display: block;
-    background-size: contain;
-    z-index: 10;
-}
-
-/*Shadow on floor*/
-
-#ballShadow {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    z-index: 10;
-    margin-left: -30px;
-    background-image: url("http://svgur.com/i/4V.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 100%;
-    animation: shrink 1s infinite;
-    z-index: -1;
-    background-position: center;
-}
-
-
-/* Basketball-animation keyframes */
-
-@keyframes jump {
-    0% {
-        top: 0;
-        transform: scale3d(1, 1, 1);
-        border-radius: 100%;
-        animation-timing-function: ease-in;
-    }
-    45% {
-        transform: scale3d(1, 1, 1);
-    }
-    50% {
-        top: 100px;
-        animation-timing-function: ease-out;
-        transform: scale3d(1.3, .8, 1);
-    }
-    55% {
-        transform: scale3d(1, 1, 1);
-    }
-    60% {
-        transform: scale3d(.8, 1.1, 1);
-    }
-    70% {
-        transform: scale3d(.95, 1.05, 1);
-    }
-    72% {
-        transform: scale3d(1, 1, 1);
-    }
-    100% {
-        transform: scale3d(1, 1, 1);
-        top: 0;
-        border-radius: 100%;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes shrink {
-    0% {
-        bottom: 0;
-        margin-left: -30px;
-        width: 80px;
-        height: 20px;
-        animation-timing-function: ease-in;
-        left: 150%;
-        opacity: .2;
-    }
-    50% {
-        bottom: 5px;
-        margin-left: -10px;
-        width: 50px;
-        height: 10px;
-        animation-timing-function: ease-out;
-        left: 35%;
-        opacity: 1;
-    }
-    100% {
-        bottom: 0;
-        margin-left: -30px;
-        width: 80px;
-        height: 20px;
-        animation-timing-function: ease-in;
-        left: 150%;
-        opacity: .2;
-    }
-}
-
-@keyframes lightop {
-    0% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .1;
-    }
-    100% {
-        opacity: .25;
-    }
-}
-
-@keyframes shadop {
-    0% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .55;
-    }
-    100% {
-        opacity: .25;
-    }
-}
-
-@keyframes back {
-    0% {
-        background-position: top;
-    }
-    100% {
-        background-position: bottom;
-    }
-}
-
-/*LOGO ANIMATION END from (clemishow on https://codepen.io/clemishow/pen/ZYPPeE) and (Vladimir Gashenko onhttps://codepen.io/gxash/pen/QNzKoj)*/
 
 .display {
     display: none;
@@ -1400,137 +713,10 @@ a {
 }
 
 .title-grouping {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#glass {
-    width: 44px;
-    height: 54px;
-}
-
- #beer {
-    width: 36px;
-    height: 55px;
-    left: 0px;
- }
-
- #poignet {
-    width: 14px;
-    height: 28px;
-    top: -47px;
-    left: 29px;
-    border-radius: 0 10px 10px 0;
-}
-
-#mousse_1 {
-    top: -93px;
-    left: -23px;
-}
-
-#mousse_1::before {
-    width: 13px;
-    height: 13px;
-}
-
-#mousse_1::after {
-    width: 13px;
-    height: 13px;
-}
-
-#mousse_2 {
-    top: -90px;
-    left: -19px;
-}
-
-#mousse_2::after {
-    width: 13px;
-    height: 13px;
-}
-
-#mousse_3 {
-    top: -96px;
-    left: -18px;
-}
-
-#mousse_3::before {
-    width: 13px;
-    height: 13px;
-}
-
-#mousse_3::after {
-    width: 13px;
-    height: 13px;
-}
-
-#mousse_4 {
-    top: -95px;
-    left: 5px;
-}
-
-#mousse_4::before {
-    width: 14px;
-    height: 14px;
-}
-
-#mousse_4::after {
-    width: 10px;
-    height: 10px;
-}
-#mousse_5 {
-    top: -98px;
-    left: -1px;
-}
-
-#mousse_5::before {
-    width: 14px;
-    height: 14px;
-}
-
-#mousse_volante {
-    top: -71px;
-    left: -13px;
-}
-
-#mousse_volante::after {
-    width: 8px;
-    height: 8px;
-    top: 15px;
-    left: 19px;
-}
-
-#mousse_interieur {
-    top: -65px;
-    left: -8px;
-}
-
-#mousse_interieur::before {
-    width: 6px;
-    height: 6px;
-}
-
-#mousse_interieur::after {
-    width: 4px;
-    height: 4px;
-    top: 15px;
-    left: 13px;
-}
-
-#mousse_interieur_2 {
-    top: -73px;
-    left: -4px;
-}
-
-#mousse_interieur_3 {
-    top: -53px;
-    left: -9px;
-}
-
-#mousse_interieur_4 {
-    top: -89px;
-    left: 0px;
-}
-
-.ball-icon {
+.firstBall {
     display:none;
 }
 }
@@ -1538,15 +724,12 @@ a {
 
 /*Iphone 4 & Iphone 5SE */
 @media  (min-width: 320px) { 
-    body, .pageTwo, .pageThree {
-        background-size: 600px 640px;
-    }
 
     .navbar-brand {
         font-size: 14px;
     }
     
-    #beer_text {
+    #title_text {
         font-size: 16px;
     }
 
@@ -1574,6 +757,7 @@ a {
         font-family: "Montserrat", "Arial";
         color: white;
         height: 75%;
+
         width: 100%;
         font-size: 10px;
     }
@@ -1581,15 +765,26 @@ a {
     .team-detail {
         padding:0px
     }
+
+      
+      .addressSection {
+        font-size: 16px;
+    }
+
+      #address {
+          font-size: 14px;
+      }
+
+      #search-btn {
+          font-size: 14px;
+      }
+
+
 }
 /* Galaxy S5 */
 @media  (min-width: 360px) { 
 
-    body, .pageTwo, .pageThree{
-        background-size: 725px 650px;
-    }
-
-    #beer_text {
+    #title_text {
         font-size: 24px;
     }
 
@@ -1608,9 +803,11 @@ a {
     }
 
     .pageTwo {
+
         height: calc(90vh - 60px);
         display: inline-block;
         display: none;
+
         margin: 20% 5% 0 5%;
     }
 
@@ -1618,6 +815,7 @@ a {
         font-family: "Montserrat", "Arial";
         color: white;
         height: 90%;
+
         width: 100%;
         font-size: 10px;
     }
@@ -1659,15 +857,11 @@ a {
 /* Iphone 6/7/8 */
 @media  (min-width: 375px) { 
 
-    body, .pageTwo, .pageThree{
-        background-size: 850px 800px;
-    }
-
     .navbar-brand {
         font-size: 14px;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 7px; 
         font-size: 22px;
     }
@@ -1683,15 +877,11 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 20% 5% 0 5%;
     }
     .gameSection {
         font-family: "Montserrat", "Arial";
         color: white;
-        height: 90%;
         font-size: 10px;
     }
     .team-detail {
@@ -1707,10 +897,6 @@ a {
     }
     .awayTeamScore {
         padding-left: 19px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 55px);
     }
 
     .addressSection input {
@@ -1734,22 +920,18 @@ a {
 /* Pixel 2 & Pixel 2 XL */
 @media  (min-width: 411px) { 
 
-    body, .pageTwo, .pageThree{
-        background-size: 925px 825px;
-    }
-
     .navbar-brand {
         font-size: 17px;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 7px; 
         font-size: 26px;
     }
 
     .landingButtons {
         font-size: 18px;
-        width: 30%;
+        width: 35%;
         margin: 0 1%;
     }
 
@@ -1762,16 +944,12 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 15% 5% 0 5%;
     }
     
     .gameSection {
         font-family: "Montserrat", "Arial";
         color: white;
-        height: 90%;
         width: 100%;;
         font-size: 10px;
     }
@@ -1799,10 +977,6 @@ a {
         flex-direction:column;
         width:50%;
         padding: 5px;
-    }
-    
-    .pageThree {
-        height: calc(100vh - 60px);
     }
 
     .emptyRestaurantContainer {
@@ -1843,10 +1017,6 @@ a {
 /* IPAD */
 @media  (min-width: 768px) { 
 
-    body, .pageTwo, .pageThree{
-        background-size: 1200px 1024px;
-    }
-
     .navbar-brand {
         font-size: 22px;
     }
@@ -1855,7 +1025,7 @@ a {
         justify-content: space-around;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 12px; 
         font-size: 36px;
     }
@@ -1874,21 +1044,19 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
-        margin: 12% 5% 0 5%;
+        margin: 9% 5% 0 5%;
     }
+
+    .twitterBtn {
+        font-size: 20px;
+    }
+    
 
     .scoreboard {
         display: inline-flex;
         flex-direction:column;
         width:33.33%;
         padding: 15px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 70px);
     }
 
     .emptyRestaurantContainer {
@@ -1940,10 +1108,6 @@ a {
 /* IPAD PRO*/
 @media  (min-width: 1024px) { 
 
-    body, .pageTwo, .pageThree{
-        background-size: 1500px 1366px;
-    }
-
     .navbar-brand {
         font-size: 30px;
     }
@@ -1954,7 +1118,7 @@ a {
         justify-content: space-around;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 17px; 
         font-size: 45px;
     }
@@ -1974,10 +1138,11 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
-        margin: 10% 5% 0 5%;
+        margin: 8% 5% 0 5%;
+    }
+
+    .twitterBtn {
+        font-size: 24px;
     }
     
     .scoreboard {
@@ -1985,10 +1150,6 @@ a {
         flex-direction:column;
         width: 33%;
         padding: 30px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 81px);
     }
 
     .eats-container {
@@ -2014,9 +1175,6 @@ a {
 }
 
 @media  (min-width: 1200px) { 
-    body, .pageTwo, .pageThree{
-        background-size: 1500px 1366px;
-    }
 
     .navbar-brand {
         font-size: 40px;
@@ -2032,7 +1190,7 @@ a {
         justify-content: space-around;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 17px; 
         font-size: 45px;
     }
@@ -2052,10 +1210,11 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 10% 5% 0 5%;
+    }
+
+    .twitterBtn {
+        font-size: 26px;
     }
     
     .scoreboard {
@@ -2063,10 +1222,6 @@ a {
         flex-direction:column;
         width: 33%;
         padding: 30px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 81px);
     }
 
     .eats-container {
@@ -2127,145 +1282,7 @@ a {
         justify-content: space-around;
     }
 
-    .ball-icon {
-        display:none;
-    }
-
-    #glass {
-        width: 44px;
-        height: 54px;
-    }
-    
-     #beer {
-        width: 36px;
-        height: 55px;
-        left: 0px;
-     }
-    
-     #poignet {
-        width: 14px;
-        height: 28px;
-        top: -47px;
-        left: 29px;
-        border-radius: 0 10px 10px 0;
-    }
-    
-    #mousse_1 {
-        top: -93px;
-        left: -23px;
-    }
-    
-    #mousse_1::before {
-        width: 13px;
-        height: 13px;
-    }
-    
-    #mousse_1::after {
-        width: 13px;
-        height: 13px;
-    }
-    
-    #mousse_2 {
-        top: -90px;
-        left: -19px;
-    }
-    
-    #mousse_2::after {
-        width: 13px;
-        height: 13px;
-    }
-    
-    #mousse_3 {
-        top: -96px;
-        left: -18px;
-    }
-    
-    #mousse_3::before {
-        width: 13px;
-        height: 13px;
-    }
-    
-    #mousse_3::after {
-        width: 13px;
-        height: 13px;
-    }
-    
-    #mousse_4 {
-        top: -95px;
-        left: 5px;
-    }
-    
-    #mousse_4::before {
-        width: 14px;
-        height: 14px;
-    }
-    
-    #mousse_4::after {
-        width: 10px;
-        height: 10px;
-    }
-    #mousse_5 {
-        top: -98px;
-        left: -1px;
-    }
-    
-    #mousse_5::before {
-        width: 14px;
-        height: 14px;
-    }
-    
-    #mousse_volante {
-        top: -71px;
-        left: -13px;
-    }
-    
-    #mousse_volante::after {
-        width: 8px;
-        height: 8px;
-        top: 15px;
-        left: 19px;
-    }
-    
-    #mousse_interieur {
-        top: -65px;
-        left: -8px;
-    }
-    
-    #mousse_interieur::before {
-        width: 6px;
-        height: 6px;
-    }
-    
-    #mousse_interieur::after {
-        width: 4px;
-        height: 4px;
-        top: 15px;
-        left: 13px;
-    }
-    
-    #mousse_interieur_2 {
-        top: -73px;
-        left: -4px;
-    }
-    
-    #mousse_interieur_3 {
-        top: -53px;
-        left: -9px;
-    }
-    
-    #mousse_interieur_4 {
-        top: -89px;
-        left: 0px;
-    }
-    
-    .ball-icon {
-        display:none;
-    }
-
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 13% 5% 0 5%;
     }
 
@@ -2319,10 +1336,6 @@ a {
 
 @media (min-width: 575.98px) and (orientation: landscape) {
 
-    body, .pageTwo, .pageThree{
-        background-size: 925px 975px;
-    }
-
     .title-grouping {
         justify-content: space-around;
     }
@@ -2331,7 +1344,7 @@ a {
         font-size: 18px;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 10px; 
         font-size: 30px;
     }
@@ -2347,9 +1360,6 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 10% 5% 0 5%;
     }
 
@@ -2358,10 +1368,6 @@ a {
         flex-direction:column;
         width:50%;
         padding: 5px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 60px)
     }
 
     .addressSection {
@@ -2419,10 +1425,6 @@ a {
 
 @media (min-width: 820px) and (max-width: 1024px) and (orientation: landscape) {
 
-    body, .pageTwo, .pageThree{
-        background-size: 1024px 975px;
-    }
-
     .title-grouping {
         justify-content: space-around;
     }
@@ -2435,7 +1437,7 @@ a {
         font-size: 20px;
     }
     
-    #beer_text {
+    #title_text {
         letter-spacing: 17px; 
         font-size: 36px;
     }
@@ -2450,9 +1452,6 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 8% 5% 0 5%;
     }
 
@@ -2507,10 +1506,6 @@ a {
 }
 
 @media (min-width: 1024.98px) and (max-width: 1199.98px) and (orientation: landscape) {
-    
-    body, .pageTwo, .pageThree{
-        background-size: 1366px 1125px;
-    }
 
     .title-grouping {
         justify-content: center;
@@ -2524,7 +1519,7 @@ a {
         font-size: 22px;
     }
     
-    #beer_text {
+    #title_text {
         letter-spacing: 17px; 
         font-size: 44px;
     }
@@ -2539,9 +1534,6 @@ a {
     }
 
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 8% 5% 0 5%;
     }
 
@@ -2609,10 +1601,6 @@ a {
 
 @media (min-width: 1200px) and (max-width: 1366.98px) and (orientation: landscape) {
 
-    body, .pageTwo, .pageThree{
-        background-size: 1875px 1300px;
-    }
-
     .title-grouping {
         justify-content: center;
     }
@@ -2625,7 +1613,7 @@ a {
         font-size: 22px;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 20px; 
         font-size: 60px;
     }
@@ -2643,6 +1631,7 @@ a {
         height: calc(90vh - 60px);
         display: inline-block;
         display: none;
+
         margin: 8% 5% 0 5%;
     }
 
@@ -2665,10 +1654,6 @@ a {
         font-size: 26px;
     }
 
-    .pageThree {
-        height: calc(100vh - 80px)
-    }
-   
     .emptyRestaurantContainer {
         font-size: 35px;
     }
@@ -2719,10 +1704,6 @@ a {
 
 @media (min-width: 1367px) and (orientation: landscape) {
 
-    body, .pageTwo, .pageThree{
-        background-size: 1875px 1300px;
-    }
-
     .title-grouping {
         justify-content: center;
     }
@@ -2735,7 +1716,7 @@ a {
         font-size: 30px;
     }
 
-    #beer_text {
+    #title_text {
         letter-spacing: 20px; 
         font-size: 60px;
     }
@@ -2745,9 +1726,6 @@ a {
         width: 16%;
     }
     .pageTwo {
-        height: calc(90vh - 60px);
-        display: inline-block;
-        display: none;
         margin: 6% 5% 0 5%;
     }
 
@@ -2769,10 +1747,6 @@ a {
 
     .twitterBtn {
         font-size: 30px;
-    }
-
-    .pageThree {
-        height: calc(100vh - 70px)
     }
 
     .addressSection {
@@ -2816,4 +1790,27 @@ a {
     .mainRestaurantContainer {
         height: 25%;
     }
+}
+
+
+
+.pageTwo {
+    background-image: url("images/court1.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 126px);
+    margin-top: 60px;
+    background-size: cover;
+    background-position: 50% 100%;
+    display: none;
+    /* background-size: cover; */
+}
+
+
+
+
+.team-detail .team-nameandscore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
