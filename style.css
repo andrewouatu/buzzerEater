@@ -482,10 +482,9 @@ body {
 }
 
 /*TWITTER CSS BEGINS HERE*/
-
 .twitterContainer{
     width: 100%;
-    color: white;
+    color: black;
     font-size: 1rem;
     display: inline-block;
     bottom: 0;
@@ -541,27 +540,40 @@ body {
 }
 
 .tweetsFeed{
-    height: 80%;
-    width: 99%;
-    overflow: auto;
-    /*overflow-x: hidden;*/
+    height: 50%;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .tweetsFeed a{
-    color: lightskyblue;
+    color: #1CA1F1;
     margin: 0 5px;
 }
 
 .tweetText{
-    height: 25%;
+    height: 75px;
     width: 99%;
-    border: solid lightskyblue 2px;
+    border: solid #1CA1F1 2px;
     border-radius: 10px;
     margin-top: 10px;
     text-align: center;
+    font-size: 16px;
+}
+/*TWITTER CSS ENDS HERE*/
+
+/* TWITTER FEED MODAL CSS CHANGES STARTS HERE*/
+
+.modal-open #pageTwo .twitterContainer .twitterSection #exampleModalCenter 
+.modal-dialog .modal-content .modal-header button{
+    font-size: 34px;
 }
 
-/*TWITTER CSS ENDS HERE*/
+.modal-open #pageTwo .twitterContainer .twitterSection #exampleModalCenter 
+.modal-dialog .modal-content .modal-header .modal-title{
+    display: inline;
+}
+
+/* TWITTER FEED MODAL CSS CHANGES ENDS HERE*/
 
 
 .reset {
@@ -706,6 +718,8 @@ body {
     width: 100%;
   }
 
+/* **********MEDIA QUERIES********** */
+
 @media (max-width: 550px ) and (orientation: portrait) {
 
 .main-title {
@@ -723,7 +737,7 @@ body {
 
 
 /*Iphone 4 & Iphone 5SE */
-@media  (min-width: 320px) { 
+@media  (max-width: 320px) { 
 
     .navbar-brand {
         font-size: 14px;
@@ -778,8 +792,6 @@ body {
       #search-btn {
           font-size: 14px;
       }
-
-
 }
 /* Galaxy S5 */
 @media  (min-width: 360px) { 
