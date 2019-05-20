@@ -551,7 +551,7 @@ body {
 }
 
 .tweetText{
-    height: 75px;
+    height: 100px;
     width: 99%;
     border: solid #1CA1F1 2px;
     border-radius: 10px;
@@ -803,6 +803,7 @@ body {
       .tweetText{
           height: 130px;
           font-size: 14px;
+          overflow: hidden;
       }
 }
 /* Galaxy S5 */
