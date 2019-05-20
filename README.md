@@ -20,12 +20,8 @@ Hackathon project involving the combination of different data sources into an ap
 
 
 ### Technologies Used:
-- HTML 
-- CSS
+- HTML 5
+- CSS 3
 - JavaScript
-- PHP
-- NodeJS
-- Google API 
-- NBA Data API
-- Twitter API
-- Zomato Restaurant API
+- jQuery
+- Bootstrap
