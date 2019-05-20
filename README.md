@@ -1,6 +1,6 @@
 # Buzzer Eater
 
-A single page application that allows users to find local sports bars, view a live updating scoreboard for NBA games, and a NBA twitter feed. The application utilizes APIs to display data on the DOM and we utlized toggle to change from page to page. The application was originally made during a 48 hour hackathon with a team of 5 developers.
+A single page application that allows users to find local sports bars, view a live updating scoreboard for NBA games, and a NBA twitter feed. The application utilizes APIs to display data on the DOM and toggle to change from page to page.
 
 ### Technologies Used
 - HTML5
