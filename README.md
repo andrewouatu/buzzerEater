@@ -27,4 +27,5 @@ Hackathon project involving the combination of different data sources into an ap
 - NodeJS
 - Google API 
 - NBA Data API
+- Twitter API
 - Zomato Restaurant API
