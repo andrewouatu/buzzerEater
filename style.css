@@ -558,6 +558,7 @@ body {
     margin-top: 10px;
     text-align: center;
     font-size: 16px;
+    padding: 4px;
 }
 /*TWITTER CSS ENDS HERE*/
 
@@ -733,6 +734,12 @@ body {
 .firstBall {
     display:none;
 }
+
+.tweetText{
+    height: 120px;
+    overflow: hidden;
+}
+
 }
 
 
@@ -790,6 +797,11 @@ body {
       }
 
       #search-btn {
+          font-size: 14px;
+      }
+
+      .tweetText{
+          height: 130px;
           font-size: 14px;
       }
 }
