@@ -4,24 +4,16 @@ Hackathon project involving the combination of different data sources into an ap
 
 > Buzzer Eater is a single page application that allows users to find sports bar around a given location and also view a live updating scoreboard for tonights NBA games. The application utilizes API's to display data on the DOM and we utlized toggle to change from page to page.
 
-### Requirements
-- Combine at least 4 **external** resources via AJAX requests and present their information in an application
-- Must be documented loosely on JSDOC standards
-- Must be issue-managed via meistertask 
-
-
-
-### Responsibilties
-- Project-Lead
-- NBA Scoreboard dynamic creation and rendering of JSON API object information
-- Google API utilization(geocoding, places, maps)
-- Node.js Proxy server setup and requests to NBA API
-- AJAX, CSS and debugging
-
-
-### Technologies Used:
+### Technologies Used
 - HTML 5
 - CSS 3
 - JavaScript
 - jQuery
 - Bootstrap
+
+### Team
+* Chris Kim
+* Edmund Park
+* Andrew Ouatu
+* Michael Chu
+* Andrew Moser
