@@ -1,4 +1,4 @@
-# Buzzer Eater Hackathon Project
+# Buzzer Eater
 
 Hackathon project involving the combination of different data sources into an application or game over the span of 2 days.
 
