@@ -1,8 +1,6 @@
 # Buzzer Eater
 
-Hackathon project involving the combination of different data sources into an application or game over the span of 2 days.
-
-> Buzzer Eater is a single page application that allows users to find sports bar around a given location and also view a live updating scoreboard for tonights NBA games. The application utilizes API's to display data on the DOM and we utlized toggle to change from page to page.
+Single page application that allows users to find local sports bars, view a live updating scoreboard for NBA games, and a NBA twitter feed. The application utilizes APIs to display data on the DOM and we utlized toggle to change from page to page. The application was originally made during a 48 hour hackathon with a team of 5 developers.
 
 ### Technologies Used
 - HTML 5
